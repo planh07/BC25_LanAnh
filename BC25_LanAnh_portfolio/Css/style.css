@@ -1,0 +1,298 @@
+header {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo i {
+    color: #35a22c;
+}
+
+.logo span { 
+    font-size: 2rem;
+}
+
+.menu li{
+    margin: 0 1rem;
+}
+
+.menu li::after {
+    content: "";
+    background-color: #35a22c;
+    width: 0;
+    height: 5px;
+    display: block;
+    transition: all 0.5s;
+}
+
+.menu li.active::after {
+    width: 100%;
+}
+
+.menu li:hover::after{
+    width: 100%;
+}
+
+.menu li a:hover::after {
+    color: #35a22c;
+}
+
+/*carousel*/
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item:nth-child(1){
+    background-image: url("../images/finland.jpg");
+}
+
+.carousel-item:nth-child(2){
+    background-image: url("../images/mountains.jpg");
+}
+
+.carousel-item:nth-child(3){
+    background-image: url("../images/mountains-1.jpg");
+}
+
+
+.carousel__thumb {
+    width : 140px;
+    margin : auto;
+}
+
+.carousel__thumb img{
+    width: 100%;
+    border-radius: 50%;
+} 
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h1{
+    font-size: 3.5rem;
+}
+
+.carousel-caption p{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/*project*/
+.project__title {
+    text-align: center;
+}
+
+.project__title h2{
+    color: black;
+    font-size: 33px;
+    margin-top: 80px;
+}
+
+.project__title p{
+    color: #585858;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.project__title button{
+    color: #585858;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #585858;
+    padding: 7px 15px;
+    margin: 15px 7px;
+}
+
+.project__content .button .nav-item {
+    border: 1px solid #1a1d2d;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #1a1d2d;
+}
+
+.button {
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.nav-link active {
+    border: 2px solid black;
+    background-color: green;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color:#35a22c;
+    border: 2px solid black;
+    border-color: #35a22c;
+}
+
+.card-img-top {
+    margin-top: 30px;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card h4{
+    font-size: 1.25rem;
+}
+
+.card-body {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: #8b8b8b;
+}
+
+.card h4:hover {
+    color: #35a22c;
+}
+
+#illustration {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.feature {
+    background: url("./../images/3.jpg") no-repeat center;
+    background-size: cover;
+    padding: 100px 0 120px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.feature__item:hover {
+    background: #000;
+    border-color: #fff;
+}
+
+.feature__item {
+    padding: 40px 40px;
+    transition: .3s;
+    border-radius: 10px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(3px);
+    transition: all .5s;
+}
+
+.feature__item i{
+    font-size: 48px;
+    color: #35a22c;
+}
+
+.overplay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hire__text, .hire__title, .feature__item {
+    color: white;
+}
+
+
+.award {
+    position: relative;
+    color: #585858;
+    padding: 70px 0;
+}
+
+.award__bg {
+    background-image: url("./../images/memphis_3.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-lg {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    background-color: #000;
+}
+
+.footer__main i {
+    color: #aaaaaa;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    border: 1px solid #454545;
+    transition: all .5s;
+}
+
+.footer__main i:hover{
+    color: #35a22c;
+}
+
+hr {
+    color: #aaaaaa;
+}
+
+footer p {
+    color: #aaa;
+    margin: 0;
+}
+
+footer a {
+    color: #aaa;
+}
+
+footer a:hover{
+    color: #35a22c;
+    text-decoration: none;
+}
